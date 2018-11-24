@@ -1,0 +1,17 @@
+<header>
+  <ul>
+    <li><a [routerLink]="['/about']" [routerLinkActive]="['active']">Sobre mi</a></li>
+    <li><a [routerLink]="['/projects']" [routerLinkActive]="['active']">Proyectos</a></li>
+    <li id="logo"><a href="#">DP</a></li>
+    <li><a [routerLink]="['/makeproject']" [routerLinkActive]="['active']">Crea tu Proyecto</a></li>
+    <li><a [routerLink]="['/contact']" [routerLinkActive]="['active']">Contacto</a></li>
+  </ul>
+</header>
+<hr>
+<section id="content">
+<router-outlet></router-outlet>
+</section>
+
+<footer>
+  Master en Javascript de Paul Tang Arce &copy;
+</footer>

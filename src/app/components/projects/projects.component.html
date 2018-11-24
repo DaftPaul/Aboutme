@@ -1,0 +1,17 @@
+<div class="ver_proyectos">
+	<h1>PROYECTOS</h1>
+</div>
+<div class="show_projects" >
+	<p>Todos los proyectos son los siguientes: </p>
+	<ul>
+		<li *ngFor='let proyecto of proyectos; let indice = index'>
+			<a [routerLink]= "['/project', proyecto._id]">
+				<div class="image">
+					<img src="{{url}}get-image/{{proyecto.image}}" *ngIf= "proyecto.image" >
+				</div>
+				<h2>{{proyecto.name}}</h2>
+				<p>Categoria :{{proyecto.category}}</p>
+			</a>
+		</li>
+	</ul>
+</div>
